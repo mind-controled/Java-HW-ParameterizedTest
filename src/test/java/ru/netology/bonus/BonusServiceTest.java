@@ -11,7 +11,6 @@ class BonusServiceTest {
     void shouldCalculate(String testName, long amount, long expected, boolean registered) {
         BonusService service = new BonusService();
 
-
         long actual = service.calculate(amount, registered);
 
         Assertions.assertEquals(expected, actual);
